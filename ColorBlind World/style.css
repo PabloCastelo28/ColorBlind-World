@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+.parteDeCima {
+  background-color: red;
+  height: 300px;
+}
+
 body {
   background-color: #0f0f0f;
   color:  #f0f0f0;
@@ -13,10 +18,17 @@ body {
 header {
   text-align: center;
   margin-bottom: 2rem;
+  padding: 100px 20px; /* AUMENTA O TAMANHO */
 }
 
 h1 {
   color: #a78bfa;
+  font-size: 80px; /* aumenta bastante */
+}
+
+.headerP {
+  color: #a78bfa;
+  font-size: 20px; /* aumenta bastante */
 }
 
 /* para centralizar a área 
@@ -26,6 +38,7 @@ de upload */
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.5rem;
+  font-size: 20px;
 }
 
 /* para estilizar o botão de 
@@ -51,15 +64,17 @@ input[type="file"] {
   justify-content: center;
   gap: 0.1rem;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 .buttons button {
-  border: 2px solid #a78bfa;  /* borda roxa visível */
+  border: 2px solid blue;  /* borda roxa visível */
   background: transparent;     /* fundo transparente */
   color: #a78bfa;              /* texto roxo */
   border-radius: 10px;
   transition: all 0.2s;
-  padding: 10px;
+  padding: 12px;
+  margin: 5px;
 }
 
 .buttons button:hover {
@@ -81,14 +96,15 @@ input[type="file"] {
 }
 
 .description {
-  margin-left: 50px;
+  margin: 40px auto; /* CENTRALIZA HORIZONTALMENTE */
+
+  max-width: 600px;  /* deixa mais bonito */
+  text-align: center;
+
   border: 5px solid #a78bfa;
   background-color: #a78bfa;
   border-radius: 10px;
   padding: 10px;
   font-weight: bold;
   color: #000;
-  width: 500px;
-  height: auto;
-  
 }

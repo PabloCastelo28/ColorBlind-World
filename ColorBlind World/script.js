@@ -3,7 +3,7 @@ const canvas = document.getElementById("imageCanvas");
 const buttons = document.querySelectorAll(".buttons button");
 const ctx = canvas.getContext("2d");
 let imagemAtual = null;
-let filtroAtual = "normal"
+let filtroAtual = "semEscolha"
 const descricaoTexto = document.querySelector(".description p");
 
 const matrizes = {
@@ -14,6 +14,7 @@ const matrizes = {
 };
 
 const descricoes = {
+  semEscolha: "Adicione uma foto e escolha um tipo de daltonismo!",
   normal: "Visão normal (tricromacia): percepção completa das cores, com funcionamento normal dos três tipos de cones.",
   deuteranopia: "Deuteranopia: dificuldade em diferenciar tons de verde. É o tipo mais comum de daltonismo.",
   protanopia: "Protanopia: dificuldade em perceber tons de vermelho, que podem parecer mais escuros ou até inexistentes.",
