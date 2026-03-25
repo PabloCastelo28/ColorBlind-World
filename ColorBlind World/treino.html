@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ColorBlind World</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>ColorBlind World</h1>
+      <p>Veja como as pessoas daltônicas realmente veem o mundo</p>
+    </header>
+
+    <main>
+      <section>
+        <label for="imageUpload"> Escolha uma imagem</label>
+        <input type="file" id="imageUpload" accept="image/*"/>
+      </section>
+
+      <section class="buttons">
+        <button data-filter="normal">Normal</button>
+        <button data-filter="deuteranopia">Deuteranopia</button>
+        <button data-filter="protanopia">Protanopia</button>
+        <button data-filter="tritanopia">Tritanopia</button>
+      </section>
+
+      <section>
+       <canvas id="imageCanvas"></canvas>
+      </section>
+
+      <section class="description">
+        <p>Deuteranopia é o mais comum 
+           <!-- irei fazer as outras depois -->
+          </p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>ainda ficará vazio</p>
+    </footer>
+
+  </body>
+
+</html>
