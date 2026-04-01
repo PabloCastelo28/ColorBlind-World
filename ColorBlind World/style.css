@@ -4,16 +4,30 @@
   padding: 0;
 }
 
+:root {
+  --corPrincipal: #a78bfa;
+  --fundo: #0f0f0f;
+}
 .parteDeCima {
   background-color: red;
   height: 300px;
 }
 
 body {
-  background-color: #0f0f0f;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--fundo);
   color:  #f0f0f0;
   padding: 2rem;
 }
+
+.aba {
+  display: none;
+}
+
+.aba-ativa {
+  display: block;
+}
+
 
 header {
   text-align: center;
@@ -22,12 +36,12 @@ header {
 }
 
 h1 {
-  color: #a78bfa;
+  color: var(--corPrincipal);
   font-size: 80px; /* aumenta bastante */
 }
 
 .headerP {
-  color: #a78bfa;
+  color: var(--corPrincipal);
   font-size: 20px; /* aumenta bastante */
 }
 
@@ -44,7 +58,7 @@ de upload */
 /* para estilizar o botão de 
 escolher imagem */
 .upload-area label {
-  background-color: #a78bfa;
+  background-color: var(--corPrincipal);
   color: #000;
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
@@ -68,9 +82,9 @@ input[type="file"] {
 }
 
 .buttons button {
-  border: 2px solid blue;  /* borda roxa visível */
+  border: 2px solid var(--corPrincipal);  /* borda roxa visível */
   background: transparent;     /* fundo transparente */
-  color: #a78bfa;              /* texto roxo */
+  color: var(--corPrincipal);              /* texto roxo */
   border-radius: 10px;
   transition: all 0.2s;
   padding: 12px;
@@ -78,12 +92,12 @@ input[type="file"] {
 }
 
 .buttons button:hover {
-  background-color: #a78bfa;
+  background-color: var(--corPrincipal);
   color: #000;
 }
 
 .buttons button.ativo {
-  background-color: #a78bfa;
+  background-color: var(--corPrincipal);
   color: #000;
 }
 
@@ -101,8 +115,8 @@ input[type="file"] {
   max-width: 600px;  /* deixa mais bonito */
   text-align: center;
 
-  border: 5px solid #a78bfa;
-  background-color: #a78bfa;
+  border: 5px solid var(--corPrincipal);
+  background-color: var(--corPrincipal);
   border-radius: 10px;
   padding: 10px;
   font-weight: bold;
