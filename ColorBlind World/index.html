@@ -11,33 +11,116 @@
 
   <body>
    
-    <nav>
-      <button data-aba="Home">Home</button>
+    <nav class="nav">
+      <button data-aba="Home"  class="nav-ativa">Home</button>
       <button data-aba="Teste">Teste</button>
       <button data-aba="Simulador">Simulador</button>
       <button data-aba="Analisador">Analisador</button>
       <button data-aba="Educacao">Educação</button>
     </nav>
 
+      <!-- HOME -->
+  <!-- ---------------------------------------------------------------------------- -->
     <section class="aba aba-ativa" id="Home"> 
-      <h2>Home</h2>
-    </section>
 
+        <div class="hero">
+          <h1 class="hero-titulo">ColorBlind World</h2>
+          <p class="hero-subtitulo">Veja o mundo pelos olhos de um daltônico</p>
+          <button class="hero-botao" data-aba="Simulador">Testar Simulador</button>
+        </div>
+
+
+        <div class="cards-container">
+          <div class="card">
+            <span class="card-icone">🔴</span>
+            <h3>Protanopia</h3>
+            <p>Dificuldade em perceber tons de vermelho.</p>
+          </div>
+
+          <div class="card">
+            <span class="card-icone">🟢</span>
+            <h3>Deuteranopia</h3>
+            <p>Dificuldade em diferenciar tons de verde. O tipo mais comum.</p>
+          </div>
+          <div class="card">
+            <span class="card-icone">🔵</span>
+            <h3>Tritanopia</h3>
+            <p>Dificuldade com tons de azul e amarelo. O mais raro.</p>
+          </div>
+        </div>
+
+      
+        
+
+
+
+
+    </section>
+      <!-- TESTE -->
+    <!-- -------------------------------------------------------------------------- -->
     <section class="aba" id="Teste"> 
       <h2>Teste</h2>
+
+
+
+
+
+
+
     </section>
 
+    <!-- SIMULADOR -->
+<!-- ---------------------------------------------------------------- -->
     <section class="aba" id="Simulador"> 
       <h2>Simulador</h2>
+
+      <section class="upload-area">
+        <label for="imageUpload"> Escolha uma imagem</label>
+        <input type="file" id="imageUpload" accept="image/*"/>
+      </section>
+      
+      <section class="buttons">
+        <button data-filter="normal">Normal</button>
+        <button data-filter="deuteranopia">Deuteranopia</button>
+        <button data-filter="protanopia">Protanopia</button>
+        <button data-filter="tritanopia">Tritanopia</button>
+      </section>
+      
+      <section class="canvas-area">
+        <canvas id="imageCanvas"></canvas>
+      </section>
+
+      <section class="description">
+        <p></p>
+      </section>
     </section>
 
+      <!-- ANALISADOR -->
+  <!-- ------------------------------------------------------------------------------------ -->
     <section class="aba" id="Analisador"> 
       <h2>Analisador</h2>
+
+
+
+
+
+
+
     </section>
 
+      <!-- EDUCAÇÃO -->
+  <!-- ------------------------------------------------------------------------------------ -->
     <section class="aba" id="Educacao"> 
       <h2>Educação</h2>
+
+
+
+
+
+
+
     </section>
+  <!-- ------------------------------------------------------------------------------------ -->
 
     <!-- <div class="parteDeCima">
       <header>
@@ -78,7 +161,7 @@
         Graphics. Volume 15 (2009), Number 6, November/December 2009. pp. 1291-1298.</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="scriptCBW.js"></script>
   </body>
 
 </html>

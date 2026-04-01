@@ -8,16 +8,39 @@
   --corPrincipal: #a78bfa;
   --fundo: #0f0f0f;
 }
-.parteDeCima {
-  background-color: red;
-  height: 300px;
-}
 
 body {
   font-family: 'Space Grotesk', sans-serif;
   background-color: var(--fundo);
   color:  #f0f0f0;
   padding: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #2a2a3f;
+}
+
+.nav button {
+  background-color: transparent;
+  color: #f0f0f0;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 15px;
+  border-radius: 25px;
+  transition: all 0.2s;
+}
+
+.nav button:hover {
+  color: var(--corPrincipal)
+}
+
+nav button.nav-ativa {
+  color: var(--corPrincipal);
+  border-bottom: 2px solid var(--corPrincipal);
 }
 
 .aba {
@@ -28,24 +51,51 @@ body {
   display: block;
 }
 
-
-header {
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 2rem;
   text-align: center;
-  margin-bottom: 2rem;
-  padding: 100px 20px; /* AUMENTA O TAMANHO */
 }
 
-h1 {
+.hero-titulo {
+  font-size: 4rem;
   color: var(--corPrincipal);
-  font-size: 80px; /* aumenta bastante */
 }
 
-.headerP {
-  color: var(--corPrincipal);
-  font-size: 20px; /* aumenta bastante */
+.hero-subtitulo {
+  font-size: 1.2rem;
+  color: #8888aa;
+  margin: 1rem 0 2rem;
 }
 
-/* para centralizar a área 
+.hero-botao {
+  background-color: var(--corPrincipal);
+  color: #000;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 15px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 25px;
+  transition: all 0.2s;
+}
+
+.hero-botao:hover {
+  background-color: #7c3aed;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+/*para centralizar a área 
 de upload */
 .upload-area {
   display: flex;
@@ -107,7 +157,7 @@ input[type="file"] {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.5rem;
-}
+} 
 
 .description {
   margin: 40px auto; /* CENTRALIZA HORIZONTALMENTE */
@@ -121,4 +171,4 @@ input[type="file"] {
   padding: 10px;
   font-weight: bold;
   color: #000;
-}
+} 
